@@ -4,7 +4,7 @@ public class LogReader
 {
     private readonly string _logsFolderPath;
     private readonly string _outputDirectory;
-    private const int MAX_ITEM_PER_FILE = 10;
+    private const int MAX_ITEM_PER_FILE = 100;
     private readonly StateManager _stateManager;
 
     public LogReader(string logsFolderPath, string outputDirectory)
