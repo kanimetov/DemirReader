@@ -1,0 +1,90 @@
+## User-specific files
+.idea/
+.vs/
+.vscode/
+
+## Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+## Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+## Windows Installer files
+*.exe
+
+## .NET Core / .NET 5/6/7/8
+# Windows
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]eploy/
+
+# Linux
+[Dd]ebug*/ 
+[Dd]ist*/ 
+[Dd]eploy*/
+
+# macOS
+[Dd]ebug*/ 
+[Dd]ist*/ 
+[Dd]eploy*/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Build results
+bin/
+obj/
+
+# .NET Core specific files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NPM packages
+node_modules/
+
+# JetBrains Rider
+.idea/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# VS for Mac
+.vscode/
+
+# User-specific files for Visual Studio for Mac
+.vscode/
+.idea/
+
+# Local History for JetBrains
+.idea/.idea/
+
+# VS Code settings folder
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Log files
+*.log
+
+# Ignore SQLite database files
+*.db
+*.sqlite
