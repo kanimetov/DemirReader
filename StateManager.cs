@@ -21,7 +21,7 @@ public class StateManager {
     }
     public void SaveStates(State[] states)
     {
-        states = states.OrderBy(s => s.Type).ToArray();
+        states = states.GroupBy(s => s.Type).Select(group => group.OrderByDescending(s => s.Date).First()).ToArray();
         string stateContent = JsonSerializer.Serialize(states);
         File.WriteAllText(_stateFilePath, stateContent);
     }
