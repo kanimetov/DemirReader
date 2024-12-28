@@ -19,6 +19,7 @@ await serviceTask;
 
 static async Task RunServiceAsync(CancellationToken token, string logsFolderPath, string outputDirectory)
 {
+    const int WAIT_MINUTES = 10;
     var logReader = new LogReader(logsFolderPath, outputDirectory); 
     while (!token.IsCancellationRequested)
     {
@@ -27,7 +28,7 @@ static async Task RunServiceAsync(CancellationToken token, string logsFolderPath
 
         try
         {
-            await Task.Delay(TimeSpan.FromMinutes(1), token);
+            await Task.Delay(TimeSpan.FromMinutes(WAIT_MINUTES), token);
         }
         catch (TaskCanceledException)
         {
